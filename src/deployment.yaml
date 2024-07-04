@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: security-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: security-service
+  template:
+    metadata:
+      labels:
+        app: security-service
+    spec:
+      containers:
+      - name: security-service
+        image: security_app:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DB_NAME
+          value: "security_app_db"
+        - name: DB_USER
+          value: "security_app_usr"
+        - name: DB_PASSWORD
+          value: "BasiRanjBordamDarin35Sal"
+        - name: DB_HOST
+          value: "172.45.1.71"
+        - name: DB_PORT
+          value: "5432"
+        volumeMounts:
+        - name: static-files
+          mountPath: /app/static
+      volumes:
+      - name: static-files
+        emptyDir: {}
