@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'security_app_db',
         'USER': 'security_app_usr',
         'PASSWORD': 'BasiRanjBordamDarin35Sal',
-        'HOST': '172.45.1.71',
+        'HOST': '172.50.1.71',
         'PORT': '5432',
     }
 }

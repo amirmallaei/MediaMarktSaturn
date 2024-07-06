@@ -25,7 +25,7 @@ services:
 
 #     networks:
 #       security_app_net:
-#         ipv4_address: 172.45.1.70
+#         ipv4_address: 172.50.1.70
 
   postgres_of_security_app:
     image: postgres:13.1
@@ -43,7 +43,7 @@ services:
 
     networks:
       security_app_net:
-        ipv4_address: 172.42.1.71
+        ipv4_address: 172.50.1.71
 
   security_app:
     build: .
@@ -71,7 +71,7 @@ services:
 
     networks:
       security_app_net:
-        ipv4_address: 172.45.1.72
+        ipv4_address: 172.50.1.72
 
 
 
@@ -81,4 +81,4 @@ networks:
         ipam:
             driver: default
             config:
-                - subnet: 172.45.1.0/16
+                - subnet: 172.50.1.0/16
