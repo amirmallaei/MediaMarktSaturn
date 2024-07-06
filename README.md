@@ -9,7 +9,7 @@ This project is a Django-based RESTful API for managing security records. It inc
 
 ## Features
 
-- **User Authentication**: Register, login, and manage users.
+- **User Authentication**: login, and manage users.
 - **Security Records Management**: Create, retrieve, update, and delete security records.
 - **Token-Based Authentication**: Secure API endpoints using JWT tokens.
 
