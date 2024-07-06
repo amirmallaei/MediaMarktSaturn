@@ -21,5 +21,8 @@ This project is a Django-based RESTful API for managing security records. It inc
 - PostgreSQL
 - Docker (optional for containerized deployment)
 - Git
+
+
+### how to Run the SERVER
 Easily Run **Docker Compose up --build**
 The Server will be available on **localhost:8000**
