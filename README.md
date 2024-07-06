@@ -9,7 +9,7 @@ This project is a Django-based RESTful API for managing security records. It inc
 
 ## Features
 
-- **User Authentication**: login, 
+
 - **Security Records Management**: Create, retrieve, update, and delete security records.
 - **Token-Based Authentication**: Secure API endpoints using JWT tokens.
 
@@ -21,5 +21,3 @@ This project is a Django-based RESTful API for managing security records. It inc
 - PostgreSQL
 - Docker (optional for containerized deployment)
 - Git
-Easily pull the repo and run **docker compose up --build**
-runing server will available on **127.0.0.1:8000**
